@@ -11,6 +11,7 @@
 		AAD3618F28DCE7550038548F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD3618E28DCE7550038548F /* ContentView.swift */; };
 		AAD3619128DCE7570038548F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD3619028DCE7570038548F /* Assets.xcassets */; };
 		AAD3619428DCE7570038548F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD3619328DCE7570038548F /* Preview Assets.xcassets */; };
+		AAD3619C28DCEAE50038548F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = AAD3619B28DCEAE50038548F /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAD3619C28DCEAE50038548F /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = SimpleSMS;
+			packageProductDependencies = (
+				AAD3619B28DCEAE50038548F /* Alamofire */,
+			);
 			productName = SimpleSMS;
 			productReference = AAD3618928DCE7550038548F /* SimpleSMS.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = AAD3618028DCE7550038548F;
+			packageReferences = (
+				AAD3619A28DCEAE50038548F /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = AAD3618A28DCE7550038548F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AAD3619A28DCEAE50038548F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AAD3619B28DCEAE50038548F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AAD3619A28DCEAE50038548F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AAD3618128DCE7550038548F /* Project object */;
 }
